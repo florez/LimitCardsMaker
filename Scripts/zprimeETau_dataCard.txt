@@ -1,0 +1,109 @@
+#========= ZprimeTauTau
+
+imax 1  number of channels
+jmax 6  number of backgrounds
+kmax 92 number of nuisance parameters (sources of systematic uncertainties)
+
+# we have just one channel and will use some dummy data
+bin 1
+observation DATA
+
+bin            1        1       1       1       1       1       1
+process        SIG      W+j     Z+j     ttb     VV      qcd   Higgs
+process        0        1       2       3       4       5       6
+rate           SIGNAL WJETS   DYTOLL  TTBAR   DIBOSON  QCD    HIGGS
+
+lumi    lnN    1.026    -       1.026	1.026	1.026	-	1.026
+ISR00	lnN    1.02	-	1.02	1.02	1.02	-	-
+ISR01	lnN    -	-	-	-	-	-	-
+ISR02	lnN    -	-	-	-	-	-	-
+ISR03	lnN    -	-	-	-	-	-	-
+ISR04	lnN    -	-	-	-	-	-	-
+ISR05	lnN    -	-	-	-	-	-	-
+ISR06	lnN    -	-	-	-	-	-	1.02
+PDF00	lnN    1.065	-	1.035	1.035	1.035	-	-
+PDF01	lnN    -	-	-	-	-	-	-
+PDF02	lnN    -	-	-	-	-	-	-
+PDF03	lnN    -	-	-	-	-	-	-
+PDF04	lnN    -	-	-	-	-	-	-
+PDF05	lnN    -	-	-	-	-	-	-
+PDF06	lnN    -	-	-	-	-	-	1.065
+Stat1BIN0 lnN    DUMMY0	-	-	-	-	-	-
+Stat1BIN1 lnN    -	DUMMY1	-	-	-	-	-
+Stat1BIN2 lnN    -	-	DUMMY2	-	-	-	-
+Stat1BIN3 lnN    -	-	-	DUMMY3	-	-	-
+Stat1BIN4 lnN    -	-	-	-	DUMMY4	-	-
+Stat1BIN5 lnN    -	-	-	-	-	DUMMY5  -
+Stat1BIN6 lnN    -	-	-	-	-	-	DUMMY6
+Trig10	lnN    1.02	-	1.02	1.02	1.02	-	1.02
+Trig11	lnN    -	-	-	-	-	-	-
+Trig12	lnN    -	-	-	-	-	-	-
+Trig13	lnN    -	-	-	-	-	-	-
+Trig14	lnN    -	-	-	-	-	-	-
+Trig15	lnN    -	-	-	-	-	-	-
+Trig16	lnN    -	-	-	-	-	-	-
+MuID10	lnN    -	-	-	-	-	-	-
+MuID11	lnN    -	-	-	-	-	-	-
+MuID12	lnN    -	-	-	-	-	-	-
+MuID13	lnN    -	-	-	-	-	-	-
+MuID14	lnN    -	-	-	-	-	-	-
+MuID15	lnN    -	-	-	-	-	-	-
+MuID16	lnN    -	-	-	-	-	-	-
+ElID10	lnN    1.02	-	1.02	1.02	1.02	-	1.02
+ElID11	lnN    -	-	-	-	-	-	-
+ElID12	lnN    -	-	-	-	-	-	-
+ElID13	lnN    -	-	-	-	-	-	-
+ElID14	lnN    -	-	-	-	-	-	-
+ElID15	lnN    -	-	-	-	-	-	-
+ElID16	lnN    -	-	-	-	-	-	-
+TaID00	lnN    1.06	-	1.06	-	1.06	-	1.06
+TaID01	lnN    -	-	-	-	-	-	-
+TaID02	lnN    -	-	-	-	-	-	-
+TaID03	lnN    -	-	-	1.105	-	-	-
+TaID04	lnN    -	-	-	-	-	-	-
+TaID05	lnN    -	-	-	-	-	-	-
+TaID06	lnN    -	-	-	-	-	-	-
+bID00	lnN    1.01	-	1.01	-	1.01	-	1.01
+bID01	lnN    -	-	-	-	-	-	-
+bID02	lnN    -	-	-	-	-	-	-
+bID03	lnN    -	-	-	1.05	-	-	-
+bID04	lnN    -	-	-	-	-	-	-
+bID05	lnN    -	-	-	-	-	-	-
+bID06	lnN    -	-	-	-	-	-	-
+EES10	lnN    1.02	-	1.02	1.02	1.02	-	1.02
+EES11	lnN    -	-	-	-	-	-	-
+EES12	lnN    -	-	-	-	-	-	-
+EES13	lnN    -	-	-	-	-	-	-
+EES14	lnN    -	-	-	-	-	-	-
+EES15	lnN    -	-	-	-	-	-	-
+EES16	lnN    -	-	-	-	-	-	-
+MMS10	lnN    -	-	-	-	-	-	-
+MMS11	lnN    -	-	-	-	-	-	-
+MMS12	lnN    -	-	-	-	-	-	-
+MMS13	lnN    -	-	-	-	-	-	-
+MMS14	lnN    -	-	-	-	-	-	-
+MMS15	lnN    -	-	-	-	-	-	-
+MMS16	lnN    -	-	-	-	-	-	-
+TES00	lnN    1.02	-	1.02	-	1.01	-	1.02
+TES01	lnN    -	-	-	-	-	-	-
+TES02	lnN    -	-	-	-	-	-	-
+TES03	lnN    -	-	-	1.01	-	-	-
+TES04	lnN    -	-	-	-	-	-	-
+TES05	lnN    -	-	-	-	-	-	-
+TES06	lnN    -	-	-	-	-	-	-
+JES00	lnN    1.02	-	1.02	-	-	-	1.02
+JES01	lnN    -	-	-	-	-	-	-
+JES02	lnN    -	-	-	-	-	-	-
+JES03	lnN    -	-	-	1.05	-	-	-
+JES04	lnN    -	-	-	-	1.03	-	-
+JES05	lnN    -	-	-	-	-	-	-
+JES06	lnN    -	-	-	-	-	-	-
+Close10	lnN    -	-	-	-	-	-	-
+Close11	lnN    -	1.0583	-	-	-	-	-
+Close12	lnN    -	-	-	-	-	-	-
+Close13	lnN    -	-	-	-	-	-	-
+Close14	lnN    -	-	-	-	-	-	-
+Close15	lnN    -	-	-	-	-	1.043	-
+Close16	lnN    -	-	-	-	-	-	-
+
+#=============================================
